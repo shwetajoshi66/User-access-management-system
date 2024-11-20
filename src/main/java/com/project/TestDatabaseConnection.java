@@ -7,10 +7,9 @@ import java.sql.SQLException;
 public class TestDatabaseConnection {
     public static void main(String[] args) {
         // Connection details
-        String url = "jdbc:postgresql://localhost:5432/user_management"; // Database name: user_management
-        String username = "postgres";  // Replace with your PostgreSQL username
-        String password = "your_password_here";  // Replace with your PostgreSQL password
-
+        String url = "jdbc:postgresql://localhost:5432/user_management"; 
+        String username = "postgres"; 
+        String password = "Mani@pa55"; 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             System.out.println("Database connection successful!");
         } catch (SQLException e) {
